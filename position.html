@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position 123</title>
+    <style>
+.block div{
+    width: 100px;
+    height: 100px;
+}
+.block-1{
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.block-2{
+    background-color: green;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1;
+    
+}
+.block-3{
+    background-color: red;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="block-1">1</div>
+        <div class="block-2">2</div>
+        <div class="block-3">3</div>
+    </div>
+    
+</body>
+</html>
