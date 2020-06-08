@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*reset*/
+     body{
+         margin: 0;
+     }
+     .album{
+         font-size: 0;
+     }
+     /*layout*/
+     body{
+         background-color: #333;
+     }
+     .album{
+         background-color: #777;
+         height: 500px;
+         width: 400px;
+         padding: 10px;
+         perspective: 800px ;
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         margin: auto;
+
+
+     }
+     .album img{
+         /*opacity: 0.5;*/
+         position: absolute;
+     }
+     .album img:nth-child(5){
+         transform: rotateY(-70deg);
+         transform-origin: left;
+     }
+     .album img:nth-child(4){
+         transform: rotateY(-50deg);
+         transform-origin: left;
+     }
+     .album img:nth-child(3){
+         transform: rotateY(-30deg);
+         transform-origin: left;
+     }
+     .shadow{
+         position: absolute;
+         width: 400px;
+         height: 500px;
+         /*background-color: #000;*/
+         z-index: 1;
+
+     }
+     .album .shadow:nth-child(6){
+         transform: rotateY(-70deg);
+         transform-origin: left;
+         background-image: linear-gradient(-40deg, gray, transparent);
+         
+         
+     }
+    .album .shadow:nth-child(7){
+         transform: rotateY(-50deg);
+         transform-origin: left;
+         background-image: linear-gradient(-30deg, black, gray);
+         opacity: 0.5;
+         
+         
+     }
+     .album .shadow:nth-child(8){
+         transform: rotateY(-30deg);
+         transform-origin: left;
+         background-image: linear-gradient(-10deg, black, darkgray);
+         opacity: 0.1;
+         
+         
+     }
+
+
+    </style>
+</head>
+<body>
+   <section class="album">
+<img src="https://i.picsum.photos/id/690/400/500.jpg?grayscale" >
+<img src="https://i.picsum.photos/id/691/400/500.jpg?grayscale" >
+<img src="https://i.picsum.photos/id/692/400/500.jpg?grayscale" >
+<img src="https://i.picsum.photos/id/693/400/500.jpg?grayscale" >
+<img src="https://i.picsum.photos/id/694/400/500.jpg?grayscale" >
+<div class="shadow"></div>
+<div class="shadow"></div>
+<div class="shadow"></div>
+<div class="shadow"></div>
+<div class="shadow"></div>
+</section> 
+
+</body>
+</html>
